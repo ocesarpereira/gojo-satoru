@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+section {
+    width: -webkit-fill-available;
+    height: 100vh;
+}
+
+.home {
+    position: relative;
+}
+
+.nome,
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(71, 61, 139, 0.553);
+}
+
+.nome img {
+    width: 50%;
+}
+
+.background {
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.gojo-1 {
+    background-image: url("/assets/image-2.jpg");
+}
+
+.gojo-2 {
+    background-image: url("/assets/image-3.jpg");
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+.bio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-content {
+    width: 40%;
+    height: 40%;
+    border: 3px solid darkslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.image-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+
+.image-box img {
+    width: 100%;
+}
+
+.bio-text {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio-text h1,
+.bio-text p {
+    margin: 25px 50px;
+}
+
+.bio-text h1 {
+    font-size: 200%;
+    font-weight: bold;
+    color: darkslateblue;
+    ;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video-box {
+    /* width: 100%; */
+    height: 25%;
+    margin: 50px;
+}
+
+.gif {
+    position: relative;
+    /* height: 280px; */
+}
+
+.message,
+.gif-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: -1;
+}
+
+.gif-container img {
+    width: 100%;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message h1 {
+    font-size: 250%;
+    color: #fff;
+    background-color: rgba(71, 61, 139, 0.705);
+    padding: 50px;
+    border-radius: 16px;
+}
+
+@media screen and (max-height:768PX) {
+
+    .home,
+    .bio {
+        height: 75vh;
+    }
+
+    .bio-content {
+        width: 90%;
+        height: 90%;
+        border-radius: 6px;
+    }
+
+    .image-box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bio-text {
+        width: 450px;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .bio-text h1 {
+        font-size: 120%;
+    }
+
+    .bio-text p {
+        font-size: 90%;
+    }
+
+    .bio-text h1,
+    .bio-text p {
+        margin: 10px 25px;
+    }
+
+    .videos {
+        height: fit-content;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    .video-box {
+        height: 90%;
+    }
+
+    .gif {
+        height: 74vh;
+    }
+
+}
+
+@media screen and (max-height:1024px) {
+
+    .home,
+    .bio,
+    .gif {
+        height: 56vh;
+    }
+
+    .bio-content {
+        width: 90%;
+        height: 90%;
+        border-radius: 6px;
+    }
+
+    .image-box {
+        width: 350px;
+        height: 350px;
+    }
+
+    .bio-text {
+        width: 500px;
+        height: 480px;
+    }
+
+    .bio-text h1 {
+        font-size: 120%;
+    }
+
+    .bio-text p {
+        font-size: 90%;
+    }
+
+    .bio-text h1,
+    .bio-text p {
+        margin: 10px 25px;
+    }
+
+    .videos {
+        height: fit-content;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    .video-box {
+        height: 90%;
+    }
+
+
+}
+
+@media screen and (max-height:1440px) {
+
+    .home,
+    .bio,
+    .gif {
+        height: 52vh;
+    }
+
+    .bio-content {
+        width: 65%;
+        height: 50%;
+        border-radius: 6px;
+    }
+
+    .image-box {
+        width: 350px;
+        height: 350px;
+    }
+
+    .bio-text {
+        width: 500px;
+        height: 480px;
+    }
+
+    .bio-text h1 {
+        font-size: 120%;
+    }
+
+    .bio-text p {
+        font-size: 90%;
+    }
+
+    .bio-text h1,
+    .bio-text p {
+        margin: 10px 25px;
+    }
+
+    .videos {
+        height: fit-content;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    .video-box {
+        height: 90%;
+    }
+
+
+}
