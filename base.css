@@ -33,7 +33,7 @@ section {
 .nome {
     display: flex;
     justify-content: center;
-    background-color: rgba(71, 61, 139, 0.553);
+    background-color: rgba(171, 61, 139, 0.553);
 }
 
 .nome img {
